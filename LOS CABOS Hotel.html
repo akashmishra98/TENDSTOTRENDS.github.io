@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            background-color: #d60ad3;
+            padding: 50px 10px;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            font-size: 90px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">LOS CABOS Hotel</div>
+
+    <div style="margin-top:200px;padding:15px 15px 250px;font-size:30px">
+        <p><b>"Intelligent luxury is all about thinking about what really is special for our guests, what's different,
+             and to give them a surprise that they are not used to."</b></p>
+        <p><i>Scroll down! Something more is awaiting for you!</i></p>
+        <p>A Short Glimpse... </p>
+        <hr>
+        <p>Located just 4-minutes from downtown Cabo San Lucas, this hotel features an outdoor pool with hot tub. Each
+            suite includes a hammock and free Wi-Fi and El Tabachin restaurant is available. It is super pretty . And
+            the location is espectacular . Close to everything.</p>
+        <img src="slide3.jpg">
+        
+        <p>The corridor is home to a variety of hotels and tourist attractions. High-end resorts in the corridor include 
+            the Waldorf Astoria (formerly known as The Resort at Pedregal), Las Ventanas al Paraiso (Rosewood Resort), Esperanza (Aubergue Resorts), 
+            Villas del Palmar (Villagroup Resorts & Spa), Marquis Los Cabos, Casa Dorada, Cabo del Sol, Breathless (AMResorts), Riu Baja California,
+             Riu Santa Fe & Riu Palace, SUR, Grand Velas, Le blanc, Garza Blanca & Villa La Valencia (Formerly part of Villagroup), Hilton, Sheraton &
+              Different Oceanfront Communities & Varieties ambiances.
+
+            Chileno Bay, is one of the most frequented beaches in the Corridor. It is home to tropical fish, sea turtles, invertebrates, and sponges.
+             Snorkelers often visit this beach to observe the underwater sea life.</p>
+    </div>
+    <form action="/action_page.php" id="usrform">
+        Name: <input type="text" name="usrname">
+        <input type="submit">
+      </form>
+      <br>
+      <textarea rows="10" cols="1000" name="comment" form="usrform">
+      Enter text here...</textarea>
+      
+      <p>Give your review .</p>
+      <h1 style="text-align: center;"><p style="background: rgb(208, 8, 198);">thanks for visiting </p></h1>
+
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "30px";
+            } else {
+                document.getElementById("header").style.fontSize = "90px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

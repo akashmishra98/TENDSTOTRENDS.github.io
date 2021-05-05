@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #header {
+            background-color: #df1717;
+            padding: 50px 10px;
+            color: rgb(255, 254, 254);
+            text-align: center;
+            font-size: 90px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">THE BEVERLY HILTON</div>
+
+    <div style="margin-top:200px;padding:15px 15px 250px;font-size:30px">
+        <p><b>"When the guest arrives, give him an experience that's ahead of what he anticipates.
+             What I'm hoping is that folks come away from [our hotels] having expected something,
+             and come away thinking 'wow, so much better than what we expected to have'."</b></p>
+        <p><i>Scroll down! Something more is awaiting for you!</i></p>
+        <p>A Short Glimpse... </p>
+        <hr>
+        <p>Our hotel is in the heart of Beverly Hills and has been home to the Golden Globes since 1961. Rodeo Drive
+            shopping is under a mile away and we’re five minutes from Beverly Gardens Park. Hollywood and Santa Monica
+            beach are within 8 miles from our door. Enjoy our outdoor pool with private day beds, beauty salon, and
+            fitness center. Pets are welcome.</p>
+        <img src="antoniojaneskiVIGLnzEpOm4unsplash.jpg">
+        <p>Market-fresh California classics are waiting at our indoor-outdoor restaurant, Circa 55. 
+            Our Lobby Lounge & Barista Bar is the go-to spot for coffee, cocktails, and casual bites. Dine any time with 24-hour room service.</p>
+            <p>The Beverly Hilton is a hotel located on an 8.9-acre (3.6 ha) property at the intersection of Wilshire and Santa Monica boulevards in Beverly Hills, California. 
+                The Beverly Hilton has hosted many awards shows, charity benefits, and entertainment and motion picture industry events, 
+                and is particularly known as the venue of the annual Golden Globe Awards ceremony.</p>
+                <p>Griffin owned the hotel from 1987 to 2003, during which time its reputation faded as maintenance was deferred and competition increased. In 2003, Griffin
+                     sold the Beverly Hilton for $130 million to Beny Alagem, co-founder of Packard Bell Electronics, through his company Oasis West Realty. Commemorating its
+                      50th anniversary, an ambitious $80 million renovation by architecture firm Gensler began in conjunction with Hilton Hotels,
+                     which has managed the property since it opened.</p>
+            
+    </div>
+    <form action="/action_page.php" id="usrform">
+        Name: <input type="text" name="usrname">
+        <input type="submit">
+      </form>
+      <br>
+      <textarea rows="10" cols="1000" name="comment" form="usrform">
+      Enter text here...</textarea>
+      
+      <p>Give your review .</p>
+      <h1 style="text-align: center;"><p style="background: rgb(221, 59, 67);">Thanks for visiting </p></h1>
+
+
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "30px";
+            } else {
+                document.getElementById("header").style.fontSize = "90px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
